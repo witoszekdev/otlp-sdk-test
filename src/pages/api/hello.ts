@@ -10,7 +10,7 @@ import { SeverityNumber } from "@opentelemetry/api-logs";
 
 // exporter options. see all options in OTLPExporterNodeConfigBase
 const collectorOptions = {
-  url: "https://otel.plur.tech/v1/traces", // url is optional and can be omitted - default is http://localhost:4318/v1/logs
+  url: "https://otel.plur.tech/v1/logs", // url is optional and can be omitted - default is http://localhost:4318/v1/logs
   concurrencyLimit: 1, // an optional limit on pending requests
 };
 const logExporter = new OTLPLogExporter(collectorOptions);
